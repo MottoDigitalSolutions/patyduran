@@ -1,0 +1,421 @@
+*{
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+
+
+/* header */
+.social_icons{
+  padding-left: 110px;
+  padding-top: 20px;
+}
+.social_icons i{
+  font-size: 26px;
+  margin-left: 10px;
+  color: #031d41;
+}
+.header_menu{
+  padding-top: 20px;
+}
+.no-donate{
+  color: #031d41 !important;
+  font-size: 22px;
+  margin-left:30px;
+  cursor: pointer !important;
+}
+.collapse ul{
+  margin-left: 20%;
+}
+.header_logo img{
+  width: 50%;
+  margin-top: 10px;
+}
+.donate{
+  background-color: #c6083b;
+  color: #fff !important;
+  font-size: 22px;
+  margin-left:30px;
+  cursor: pointer !important;
+}
+.donate:hover{
+  background-color: #031d41;
+}
+
+@media screen and (max-width: 1600px) {
+  .collapse ul li a{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .collapse ul li a{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .collapse ul li a{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .collapse ul li a{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .collapse ul li a{
+    font-size: 20px;
+    margin-left:0px;
+  }
+  .collapse ul{
+    margin-left: 0%;
+  }
+  .social_icons{
+    display: none;
+  }
+}
+
+/* home-firstSection */
+
+.sectionOneHome{
+  background: url(https://marcorubio.com/wp-content/uploads/2018/03/main_page_hero-1024x523-2.png);
+  position: relative;
+  background-size: cover !important;
+  height: 80vh;
+  background-position: 0px 48px !important;
+  background-repeat: no-repeat !important;
+  margin-top: -60px;
+  padding-top: 220px;
+}
+.contenedorHome{
+  margin-left: 63%;
+  width: 400px;
+  border: 8px solid #fff;
+  padding: 25px;
+}
+.contenedorHome h1{
+  font-size: 76px;
+  color: #fff;
+  text-align: center;
+}
+.contenedorHome hr{
+  height: 6px;
+  background-color: #fff;
+}
+.contenedorHome form input{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.contenedorHome form button{
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 0;
+  background-color: #c6083b;
+  font-size: 24px;
+  color: #fff;
+  border: 2px solid #c6083b;
+}
+.contenedorHome form button:hover{
+  background-color: #031d41;
+  border: 2px solid #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .contenedorHome{
+    width: 100%;
+    margin-left: 0;
+    background-color:#031d41;
+    margin-top: 40%;
+  }
+}
+
+/* home-secondSection */
+
+.sectionTwoHome h3{
+  font-size: 36px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.sectionTwoHome div div div{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 2%;
+}
+.numDonate{
+  margin-left: 35%;
+  background-color: #fff;
+  border: solid 3px #cecece;
+  text-align: center;
+  font-size: 30px;
+  width: 100px;
+  border-radius: 0;
+  color:#031d41;
+}
+.go{
+  margin-left: 35%;
+  background-color: #c6083b;
+  border: 3px solid #c6083b;
+  text-align: center;
+  font-size: 30px;
+  width: 100px;
+  color: #fff;
+  border-radius: 0;
+}
+@media screen and (max-width: 1200px) {
+  .sectionTwoHome{
+    margin-top: 40%;
+  }
+  .numDonate{
+    width: 100%;
+    margin-left: 0;
+  }
+  .go{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+nav{
+  z-index: 1000;
+}
+
+.sectionThree{
+ margin-top: 40px;
+
+}
+
+.imgOne{
+ background-image: url(https://marcorubio.com/wp-content/uploads/2018/01/180105_MarcoRubio_FamilyPhoto_840x465-2.png);
+ background-repeat: no-repeat;
+ height: 40vh;
+ cursor: pointer;
+}
+
+.imgTwo{
+ background-image: url(https://marcorubio.com/wp-content/uploads/2017/12/marcos_priorities.png);
+ background-repeat: no-repeat;
+ height: 40vh;
+ background-size: cover;
+ cursor: pointer;
+}
+.labelThree{
+ margin-top: 380px;
+ text-transform: uppercase;
+ color: #031d41 !important;
+ font-size: 40px;
+ text-decoration: none;
+ letter-spacing: .05em;
+ display: inline-block;
+}
+.buttonThree{
+  color: #031d41;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: solid 3px #031d41;
+  padding: 0px 60px 0px 60px;
+  margin-bottom: 50px;
+  display: inline-block;
+  font-size: 24px !important;
+}
+.buttonThree span{
+  -webkit-transition: margin-left 1s;
+  transition: margin-left 1s;
+
+}
+.sectionFour{
+  background-color: #f8f9fa;
+  margin-top: 100px;
+}
+@media screen and (max-width: 1150px) {
+  .labelThree{
+   font-size: 28px;
+  }
+  .sectionFour{
+    background-color: #f8f9fa;
+    margin-top: 150px;
+  }
+  .imgTwo{
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .labelThree{
+   margin-top: 360px;
+  }
+
+}
+
+.imgOneSecFour{
+  background-image: url(https://marcorubio.com/wp-content/uploads/2017/12/issue_1.png);
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  cursor: pointer;
+}
+.imgTwoSecFour{
+  background-image: url(https://marcorubio.com/wp-content/uploads/2017/12/issue_2.png);
+  height:50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.imgThreeSecFour{
+  background-image: url(https://marcorubio.com/wp-content/uploads/2017/12/issue_3.png);
+  height:50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.labelOneSecFour{
+width: 52%;
+position: absolute;
+bottom: 8px;
+left: 16px;
+font-size: 18px;
+border: solid 3px #fff;
+padding: 12px 0px 12px 12px;
+color: #fff !important;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 32px;
+z-index: 1;
+line-height: 1.2em;
+}
+.labelOneSecFour span{
+  -webkit-transition: margin-left 1s;
+  transition: margin-left 1s;
+}
+
+.labelTwoSecFour{
+width: 42%;
+position: absolute;
+bottom: 8px;
+left: 16px;
+font-size: 18px;
+border: solid 3px #fff;
+padding: 12px 0px 12px 12px;
+color: #fff !important;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 32px;
+z-index: 1;
+line-height: 1.2em;
+}
+.labelTwoSecFour span{
+  -webkit-transition: margin-left 1s;
+  transition: margin-left 1s;
+}
+
+.labelThreeSecFour{
+  width: 60%;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+  border: solid 3px #fff;
+  padding: 12px 0px 12px 12px;
+  color: #fff !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 32px;
+  z-index: 1;
+  line-height: 1.2em;
+
+}
+
+.labelThreeSecFour span{
+  -webkit-transition: margin-left 1s;
+  transition: margin-left 1s;
+}
+
+.buttonSecFour{
+    background-color: #c6083b;
+    text-align: center;
+    font-family: 'karla', sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #fff ;
+    text-transform: uppercase;
+    padding: 4px 10px 4px 10px !important;
+    text-decoration: none;
+    border: 5px solid #c6083b;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.buttonSecFour:hover{
+  background-color: #f8f9fa;
+  border: 5px solid #031d41;
+  color:  #031d41;
+}
+
+.sectionFive{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.sectionFive h1{
+  color: #031d41;
+  text-align: center;
+}
+.principalNews div{
+  border:2px solid #d9dde3;
+  margin-top: 50px;
+}
+.principalNews div img{
+  width: 100%;
+}
+.principalNews div div{
+  padding-left: 20px;
+  padding-right: 20px;
+  border:none;
+}
+.principalNews div div span{
+  color:  #99a4b2;
+  font-size: 14px;
+}
+.principalNews div div i{
+  color:  #99a4b2;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition:  all 1s;
+  transition: all 1s;
+}
+.principalNews div div i:hover{
+  color: #637183;
+}
+
+.principalNews div div h2{
+  color:  #031d41;
+}
+.principalNews div div p{
+  color:  #031d41;
+  font-size: 14px;
+  font-family: 'karla', sans-serif;
+  margin-bottom: 10px;
+}
+.principalNews div div p{
+  color:  #031d41;
+  font-size: 14px;
+  font-family: 'karla', sans-serif;
+  margin-bottom: 10px;
+}
+.contenedorHomeTow{
+  background-color: #d9dde3;
+
+}
