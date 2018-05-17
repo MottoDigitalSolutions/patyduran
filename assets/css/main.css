@@ -822,6 +822,62 @@ line-height: 1.2em;
   transition: all .5s;
 }
 
+.dateNews{
+  color: #7b7b7b !important;
+  font-weight: 800 !important;
+}
+
+.redesNews{
+  font-size: 10px;
+  padding: 3px;
+  margin-left: 15px;
+  float: right;
+  color: white;
+  background-color: #7b7b7b;
+  border-radius: 50%;
+}
+.contenedorNews{
+  background-color: #f8f9fa;
+  padding:20px;
+  margin-top: 20px;
+  border: 2px solid #f8f9fa;
+  color: #031d41;
+  width: 40%;
+  font-family: 'karla',sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+
+}
+
+.contenedorNews h2{
+font-size: 36px;
+font-weight: 100;
+text-transform: uppercase;
+line-height: 1em;
+font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.contenedorNews button{
+  background-color: #c6083b;
+  padding: 5px;
+  padding-left: 55px;
+  padding-right: 55px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.olderPostsNews{
+  margin-top: 40px;
+  background-color: #c6083b;
+  padding: 5px;
+  padding-left: 55px;
+  padding-right: 55px;
+  color: white;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
 
 
 
