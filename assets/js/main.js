@@ -44,6 +44,13 @@ $(document).ready(function(){
      $('.imgThreeSecFour').children().children().css('margin-left', '0px');
    });
 
+   $('.buttonIssues').on('mouseover', function(){
+     $(this).children().css('padding-left', '20px');
+   });
+   $('.buttonIssues').on('mouseleave', function(){
+     $(this).children().css('padding-left', '0px');
+   });
+
 
 
 });
