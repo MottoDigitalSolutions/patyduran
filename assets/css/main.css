@@ -10,25 +10,33 @@ body{
   padding: 0;
   margin: 0;
 }
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 
 /* header */
 .social_icons{
   padding-left: 110px;
   padding-top: 20px;
+  z-index: 1000;
 }
 .social_icons i{
   font-size: 26px;
   margin-left: 10px;
   color: #031d41;
+  cursor: pointer;
 }
 .header_menu{
   padding-top: 20px;
+  z-index: 30;
 }
 .no-donate{
   color: #031d41 !important;
   font-size: 22px;
   margin-left:30px;
+  text-align: left;
   cursor: pointer !important;
 }
 .collapse ul{
@@ -37,13 +45,18 @@ body{
 .header_logo img{
   width: 50%;
   margin-top: 10px;
+  cursor: pointer;
+  z-index: 30;
 }
 .donate{
   background-color: #c6083b;
   color: #fff !important;
+  text-align: left;
   font-size: 22px;
   margin-left:30px;
   cursor: pointer !important;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .donate:hover{
   background-color: #031d41;
@@ -69,7 +82,7 @@ body{
     font-size: 10px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
   .collapse ul li a{
     font-size: 20px;
     margin-left:0px;
@@ -79,6 +92,17 @@ body{
   }
   .social_icons{
     display: none;
+  }
+  .donate{
+    margin-left: 0;
+    padding-left: 10px;
+  }
+  .no-donate{
+    margin-left: 0;
+  }
+  .header_logo img{
+    width: 80%;
+    margin-left: -30%;
   }
 }
 
@@ -93,12 +117,14 @@ body{
   background-repeat: no-repeat !important;
   margin-top: -60px;
   padding-top: 220px;
+  z-index: 0;
 }
 .contenedorHome{
   margin-left: 63%;
   width: 400px;
   border: 8px solid #fff;
   padding: 25px;
+
 }
 .contenedorHome h1{
   font-size: 76px;
@@ -136,6 +162,9 @@ body{
     margin-left: 0;
     background-color:#031d41;
     margin-top: 40%;
+  }
+  .sectionOneHome{
+    margin-top: 30px;
   }
 }
 
@@ -209,7 +238,7 @@ nav{
  cursor: pointer;
 }
 .labelThree{
- margin-top: 380px;
+ margin-top: 40%;
  text-transform: uppercase;
  color: #031d41 !important;
  font-size: 40px;
@@ -230,7 +259,6 @@ nav{
 .buttonThree span{
   -webkit-transition: margin-left 1s;
   transition: margin-left 1s;
-
 }
 .sectionFour{
   background-color: #f8f9fa;
@@ -239,22 +267,42 @@ nav{
 @media screen and (max-width: 1150px) {
   .labelThree{
    font-size: 28px;
+   margin-top: 480px;
   }
   .sectionFour{
     background-color: #f8f9fa;
     margin-top: 150px;
   }
   .imgTwo{
-    margin-top: 80px;
+    height: 34vh;
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
   .labelThree{
-   margin-top: 360px;
+   margin-top: 420px;
   }
-
+  .imgTwo{
+    height: 40vh;
+  }
 }
+@media screen and (max-width: 420px) {
+  .labelThree{
+    margin-top: 70%;
+  }
+  .imgOne{
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .labelThree{
+    margin-top: 85%;
+  }
+  .imgOne{
+    margin-bottom: 100px;
+  }
+}
+
 
 .imgOneSecFour{
   background-image: url(https://marcorubio.com/wp-content/uploads/2017/12/issue_1.png);
@@ -415,23 +463,26 @@ line-height: 1.2em;
   font-family: 'karla', sans-serif;
   margin-bottom: 10px;
 }
+
 .contenedorHomeTow{
-  background-color: #d9dde3;
-}
-.contenedorHomeTow{
+  background-color: #f8f9fa;
+  display: inline-block;
   padding: 0;
   margin-bottom: 10px;
   height: 16vh;
 }
-.contenedorHomeTow div div img{
-  width: 100%;
+.contenedorHomeTow  img{
+  width: 40%;
   height: 16vh;
 }
-.contenedorHomeTow div div p{
+.contenedorHomeTow  p{
   color:  #031d41;
   font-family: 'karla', sans-serif;
-  margin-top: 10px;
+  margin-top: -27%;
+  margin-left: 45%;
   font-weight: 600;
+  width: 55%;
+  text-align: left;
 }
 
 .buttonSecFourTwo{
@@ -451,13 +502,65 @@ line-height: 1.2em;
     -o-transition: all .3s ease;
     transition: all .3s ease;
     cursor: pointer;
-    margin-left: 52%;
-    margin-top: -50px;
+    margin-left: 45%;
+    margin-top: 8%;
 }
 .buttonSecFourTwo:hover{
   background-color: #f8f9fa;
   border: 5px solid #031d41;
   color:  #031d41;
+}
+
+@media screen and (max-width: 1200px) {
+  .contenedorHomeTow  p{
+    margin-top: -34%;
+    margin-left: 45%;
+    width: 55%;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contenedorHomeTow  p{
+    margin-top: -45%;
+    margin-left: 45%;
+    width: 55%;
+    font-size: 12px;
+    text-align: left;
+  }
+  .buttonSecFourTwo{
+    width: 40%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contenedorHomeTow{
+    margin-top: 20px;
+  }
+  .contenedorHomeTow  p{
+    margin-top: -30%;
+    margin-left: 45%;
+    width: 55%;
+    font-size: 12px;
+    text-align: left;
+  }
+  .buttonSecFourTwo{
+    margin-top: 12%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contenedorHomeTow{
+    margin-top: 20px;
+  }
+  .contenedorHomeTow  p{
+    margin-top: -30%;
+    margin-left: 45%;
+    width: 55%;
+    font-size: 8px;
+    text-align: left;
+  }
+  .buttonSecFourTwo{
+    margin-top: 6%;
+    font-size: 8px;
+  }
 }
 .sectionSix{
   background: url(https://marcorubio.com/wp-content/uploads/2017/12/dark_blue_grunge.png);
@@ -498,4 +601,152 @@ line-height: 1.2em;
 .buttonSecFourThree:hover{
   background-color: #031d41;
   border: 3px solid #fff;
+}
+@media screen and (max-width: 750px) {
+  .sectionSix{
+    display: none;
+  }
+}
+.sectionSeven{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.sectionSeven h1{
+  text-align: center;
+  color: #031d41;
+}
+.contenedorHomeThree{
+  border:3px solid #d9dde3;
+  padding: 20px;
+  margin-top: 20px;
+}
+.principalIcon{
+  font-size: 50px;
+  color:  #031d41;
+  margin-left: 40%;
+  margin-bottom: 20px;
+}
+
+.contenedorHomeThree img{
+  border-radius: 50%;
+  position: absolute;
+  left: 10%;
+  top: 35%;
+}
+.contenedorHomeThree h4{
+  margin-top: 5%;
+  margin-left: 20%;
+  font-family: 'karla',sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.secundariIcon{
+  position: absolute;
+  color: #848484;
+  cursor: pointer;
+}
+.secundariIcon:hover{
+  color:  #031d41;
+}
+.twitterName{
+  margin-top: -12%;
+  margin-left: 20%;
+  font-family: 'karla',sans-serif;
+  font-size:10px;
+}
+.contenedorHomeThree span{
+  font-family: 'karla',sans-serif;
+  font-size:10px;
+  color: #848484;
+}
+.textoTwitter{
+  margin-top: 20px;
+  font-family: 'karla',sans-serif;
+  font-size:12px;
+}
+
+footer{
+  background: url(https://marcorubio.com/wp-content/uploads/2017/12/dark_blue_grunge.png);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+footer img{
+  margin-left: 40%;
+}
+footer div{
+  margin-left: 42%;
+}
+footer i{
+  color:#435b7d;
+  font-size: 36px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+footer i:hover{
+  color: #fff;
+}
+.spanOne{
+  margin-left: 30%;
+  border: 1px solid #848484;
+  padding: 10px;
+  color: #435b7d;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'karla',sans-serif;
+  margin-right: 10px;
+
+}
+.spanTwo{
+  color: #435b7d;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'karla',sans-serif;
+  margin-right: 10px;
+}
+.spanTwo a{
+  text-decoration: none;
+  color: #435b7d;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'karla',sans-serif;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.spanTwo a:hover{
+  color: #fff;
+}
+@media screen and (max-width: 780px) {
+  .spanTwo{
+    font-size: 8px;
+  }
+  .spanOne{
+    font-size: 8px;
+    margin-left: 10%;
+  }
+  footer img{
+    margin-left: 30%;
+  }
+  footer div{
+    margin-left: 32%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .spanTwo{
+    font-size: 8px;
+  }
+  .spanOne{
+    font-size: 8px;
+    margin-left: 10%;
+  }
+  .spanTwo a{
+    font-size: 8px;
+  }
+  footer img{
+    margin-left: 10%;
+  }
+  footer div{
+    margin-left: 12%;
+  }
 }
