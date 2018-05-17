@@ -806,15 +806,18 @@ line-height: 1.2em;
   border: 3px solid #031d41;
   color: #031d41;
   width: 40%;
+  font-family: 'karla',sans-serif;
+  font-weight: 600;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 10px;
   cursor: pointer;
 }
 .contenedorIssues button i{
   margin-left: 5px;
   position: absolute;
-  margin-top: 5px;
+  margin-top: 3px;
+  font-size: 20px;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
