@@ -22,6 +22,11 @@ body{
   margin-left: 10px;
   color: #031d41;
   cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.social_icons i:hover{
+  color: #c6083b;
 }
 .header_menu{
   padding-top: 20px;
@@ -36,6 +41,51 @@ body{
 }
 .collapse ul{
   margin-left: 20%;
+}
+.meet{
+  height: 3px;
+  background-color: black;
+  width: 10%;
+  margin-left:35px;
+  margin-top: -10px;
+  display: none;
+  position: absolute;
+}
+.issues{
+  height: 3px;
+  background-color: black;
+  width: 6%;
+  margin-left:35px;
+  margin-top: -10px;
+  display: none;
+  position: absolute;
+}
+.work{
+  height: 3px;
+  background-color: black;
+  width: 12%;
+  margin-left:35px;
+  margin-top: -10px;
+  display: none;
+  position: absolute;
+}
+.news{
+  height: 3px;
+  background-color: black;
+  width: 5%;
+  margin-left:35px;
+  margin-top: -10px;
+  display: none;
+  position: absolute;
+}
+.act{
+  height: 3px;
+  background-color: black;
+  width: 4%;
+  margin-left:35px;
+  margin-top: -10px;
+  display: none;
+  position: absolute;
 }
 .header_logo img{
   width: 50%;
@@ -738,7 +788,7 @@ line-height: 1.2em;
   padding-bottom: 40px;
 }
 .sectionFourMeet div{
-  margin-left: 45%;
+  margin-left: 42%;
 }
 .sectionFourMeet div i{
   color:#031d41;
@@ -766,7 +816,7 @@ line-height: 1.2em;
   padding-top: 10%;
   background: url(https://marcorubio.com/wp-content/uploads/2017/12/marco_header-1.png);
 }
-.sectionOneIssue span{
+.spanIssues{
   border: 5px solid #fff;
   color: #fff;
   font-size: 90px;
@@ -774,6 +824,36 @@ line-height: 1.2em;
   margin-left: 65%;
   margin-top: 300px;
   letter-spacing: 20px;
+}
+.spanWork{
+  border: 5px solid #fff;
+  color: #fff;
+  font-size: 90px;
+  padding: 15px;
+  margin-left: 40%;
+  margin-top: 300px;
+  letter-spacing: 16px;
+}
+.spanNews{
+  border: 5px solid #fff;
+  color: #fff;
+  font-size: 90px;
+  padding: 15px;
+  margin-left: 60%;
+  margin-top: 300px;
+  letter-spacing: 16px;
+}
+@media screen and (max-width: 1150px) {
+  .spanIssues{
+    font-size: 50px;
+    margin-left: 25%;
+    margin-top: 800px;
+  }
+  .spanWork{
+    font-size: 50px;
+    margin-left: 10%;
+    margin-top: 800px;
+  }
 }
 .sectionTwoMeet div div div img{
   width: 105%;
@@ -828,14 +908,19 @@ line-height: 1.2em;
 }
 
 .redesNews{
-  font-size: 10px;
-  padding: 3px;
+  font-size: 8px;
+  padding: 5px;
   margin-left: 15px;
   float: right;
   color: white;
   background-color: #7b7b7b;
-  border-radius: 50%;
+  border-radius: 10px;
+  cursor: pointer;
 }
+.redesNews:hover{
+  background-color: #666666;
+}
+
 .contenedorNews{
   background-color: #f8f9fa;
   padding:20px;
@@ -863,8 +948,15 @@ font-family: 'Pathway Gothic One', sans-serif;
   padding-left: 55px;
   padding-right: 55px;
   color: white;
-  border: none;
+  border: 2px solid #c6083b;
   cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.contenedorNews button:hover{
+  background-color: #fff;
+  border: 2px solid #031d41;
+  color: #031d41;
 }
 
 .olderPostsNews{
@@ -874,9 +966,16 @@ font-family: 'Pathway Gothic One', sans-serif;
   padding-left: 55px;
   padding-right: 55px;
   color: white;
-  border: none;
+  border: 2px solid #c6083b;
   font-size: 25px;
   cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.olderPostsNews:hover{
+  background-color: #fff;
+  border: 2px solid #031d41;
+  color: #031d41;
 }
 
 

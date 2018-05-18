@@ -52,5 +52,45 @@ $(document).ready(function(){
    });
 
 
+   $('#hrmeet').on('mouseover', function(){
+     $('.meet').fadeIn(800);
+   });
+   $('#hrmeet').on('mouseleave', function(){
+     $('.meet').fadeOut(800);
+   });
+
+   $('#hrissues').on('mouseover', function(){
+     $('.issues').fadeIn('slow');
+   });
+   $('#hrissues').on('mouseleave', function(){
+     $('.issues').fadeOut('slow');
+   });
+
+   $('#hrwork').on('mouseover', function(){
+     $('.work').fadeIn('slow');
+   });
+   $('#hrwork').on('mouseleave', function(){
+     $('.work').fadeOut('slow');
+   });
+
+   $('#hrnews').on('mouseover', function(){
+     $('.news').fadeIn('slow');
+   });
+   $('#hrnews').on('mouseleave', function(){
+     $('.news').fadeOut('slow');
+   });
+
+   $('#hract').on('mouseover', function(){
+     $('.act').fadeIn('slow');
+   });
+   $('#hract').on('mouseleave', function(){
+     $('.act').fadeOut('slow');
+   });
+
+
+
+
+
+
 
 });
