@@ -10,17 +10,17 @@ $(document).ready(function(){
    });
 
    $('.imgOne').on('mouseover',function(){
-     $('.imgOne').children().children().children().css('margin-left', '20px');
+     $('.imgOne').children().children().css('margin-left', '4%');
    });
    $('.imgOne').on('mouseleave',function(){
-    $('.imgOne').children().children().children().css('margin-left', '0px');
+    $('.imgOne').children().children().css('margin-left', '1%');
    });
 
    $('.imgTwo').on('mouseover',function(){
-     $('.imgTwo').children().children().children().css('margin-left', '20px');
+     $('.imgTwo').children().children().css('margin-left','4%');
    });
    $('.imgTwo').on('mouseleave',function(){
-    $('.imgTwo').children().children().children().css('margin-left', '0px');
+    $('.imgTwo').children().children().css('margin-left', '1%');
    });
 
    $('.imgOneSecFour').on('mouseover', function(){

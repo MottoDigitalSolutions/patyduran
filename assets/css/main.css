@@ -268,22 +268,19 @@ nav{
 
 }
 
-.imgOne{
- background-image: url(https://marcorubio.com/wp-content/uploads/2018/01/180105_MarcoRubio_FamilyPhoto_840x465-2.png);
- background-repeat: no-repeat;
+.imgOne img{
  height: 40vh;
+ width: 100%;
  cursor: pointer;
 }
 
-.imgTwo{
- background-image: url(https://marcorubio.com/wp-content/uploads/2017/12/marcos_priorities.png);
- background-repeat: no-repeat;
+.imgTwo img{
  height: 40vh;
- background-size: cover;
+ width: 100%;
  cursor: pointer;
 }
 .labelThree{
- margin-top: 40%;
+ margin-left: 10%;
  text-transform: uppercase;
  color: #031d41 !important;
  font-size: 40px;
@@ -296,12 +293,16 @@ nav{
   text-decoration: none;
   text-transform: uppercase;
   border: solid 3px #031d41;
-  padding: 0px 60px 0px 60px;
+  padding: 0px 40px 0px 40px;
+  width: 25%;
   margin-bottom: 50px;
   display: inline-block;
   font-size: 24px !important;
 }
 .buttonThree span{
+  position: absolute;
+  margin-left: 1%;
+  margin-top: 6px;
   -webkit-transition: margin-left 1s;
   transition: margin-left 1s;
 }
@@ -310,43 +311,12 @@ nav{
   margin-top: 100px;
 }
 @media screen and (max-width: 1150px) {
-  .labelThree{
-   font-size: 28px;
-   margin-top: 480px;
-  }
   .sectionFour{
     background-color: #f8f9fa;
     margin-top: 150px;
   }
-  .imgTwo{
-    height: 34vh;
-  }
 }
 
-@media screen and (max-width: 770px) {
-  .labelThree{
-   margin-top: 420px;
-  }
-  .imgTwo{
-    height: 40vh;
-  }
-}
-@media screen and (max-width: 420px) {
-  .labelThree{
-    margin-top: 70%;
-  }
-  .imgOne{
-    margin-bottom: 100px;
-  }
-}
-@media screen and (max-width: 380px) {
-  .labelThree{
-    margin-top: 85%;
-  }
-  .imgOne{
-    margin-bottom: 100px;
-  }
-}
 
 
 .imgOneSecFour{
